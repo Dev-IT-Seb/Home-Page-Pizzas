@@ -1,0 +1,180 @@
+
+/** ----------------------------------------------
+                  |FLEXBOX |
+                  13/02/2025
+Flexbox s'active dans une classe en CSS.
+Les éléments du premier NIVEAU héritent du parent. 
+--------------------------------------------------
+
+/ DIRECTION /
+Haut à droite
+flex-direction: row-reverse;
+----------
+En ligne -> Par défaut
+flex-direction: row;
+----------
+Alignement verticalement Haut en bas
+flex-direction: column;
+----------
+Alignement verticalement Retournement de SENS
+flex-direction: column-reverse;
+--------------------------------------------------------------
+
+/ ALIGNEMENT PRINCIPAL/
+----------
+PAR DEFAUT
+justify-content: flex-start; 
+----------
+Centrer un text
+justify-content: center;
+----------
+Alignement à la fin de la ligne (droite)
+justify-content: flex-end;
+----------
+Espacement entre chaque element
+justify-content: space-between;
+----------
+Espacement autour des elements
+justify-content: space-around;
+----------------------------------------
+
+/ ALIGNEMENT PRINCIPAL/
+PAR DEFAUT
+align-items: stretch;
+----------------------------------------------
+
+/ MARGE ENTRE CHAQUE ELEMENT /
+gap: 3rem;
+---------------------------------------------- **/
+/** RESET VALEUR **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/** ------------------------------------------------ **/
+/** DECLARER VARIABLE FONT - IMPORTER FONT **/
+@font-face {
+    font-family:"NOM FONT";
+    src: url("");
+}
+/** ------------------------------------------------
+                    HEADER
+--------------------------------------------------**/
+.container {
+    /** RESET VALEUR **/
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #000000;
+    height: 6rem;
+}
+/** ------------------------------------------------
+                    MAIN
+--------------------------------------------------**/
+/** CORPS DE LA PAGE BACKGROUND **/
+body {
+    background-color: #c7a06c;
+}
+/** TITRE PRINCIPAL **/
+h1 {
+    margin-left: 40rem;
+    margin-top: 7rem;
+    font-size: 3rem;
+    width: 31rem;
+}
+/** CONTAINER AVEC FLEXBOX **/
+.container-nospizzas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/** COLOR WHITE NAV **/
+.container li{
+    color: #ffffff;
+    margin-top: 2rem;
+    list-style: none;
+}
+/** TITRE SECONDAIRE **/
+h2 {
+    margin-top: 9rem;
+    font-size: 40px;
+    margin-left: -29rem;
+}
+/** PARAGRAPHE **/
+p {
+    margin-top: 15rem;
+    margin-left: 0rem;
+    width: 450px;
+    height: 100px;
+    font-size: 22px;
+}
+/** PICTURE RESIZE **/
+.container-nospizzas img{
+    margin-top: 5rem;
+    margin-left: 10rem;
+    height: 500px;
+    width: 700px;
+    border: solid 3px #000000e3;
+}
+/** LIGNE **/
+.line {
+    border-top: solid 4px #f70606;
+    width: 50px;
+    margin-top: -12rem;
+    margin-left: 40rem;
+}
+.container-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.container-more p {
+    width: 7rem;
+    height: 2rem;
+    margin-top: -13rem;
+    font-size: 22px;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+/* ---------------------------------------------- */
+.nos-pizzas img {
+    width: 450px;
+    height: 350px;
+    border: solid 3px #000000e3;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+/* ---------------------------------------------- */
+.flex-parent h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 29px;
+    color: #000000;
+}
+h3 {
+    margin-top: 5rem;
+}
+.nos-pizzas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+/** ------------------------------------------------
+                    FOOTER
+----------------------------------------------------**/
+.container-footer {
+    color: #ffffff;
+    background-color: #000000;
+    height: 9.5rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.container-footer p{
+    margin-top: 3rem;
+}
+/** -------------------------------------------------**/

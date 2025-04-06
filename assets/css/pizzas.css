@@ -1,0 +1,126 @@
+
+/** ----------------------------------------------
+                  |FLEXBOX |
+                  13/02/2025
+Flexbox s'active dans une classe en CSS.
+Les éléments du premier NIVEAU héritent du parent. 
+--------------------------------------------------
+
+/ DIRECTION /
+Haut à droite
+flex-direction: row-reverse;
+----------
+En ligne -> Par défaut
+flex-direction: row;
+----------
+Alignement verticalement Haut en bas
+flex-direction: column;
+----------
+Alignement verticalement Retournement de SENS
+flex-direction: column-reverse;
+--------------------------------------------------------------
+
+/ ALIGNEMENT PRINCIPAL/
+----------
+PAR DEFAUT
+justify-content: flex-start; 
+----------
+Centrer un text
+justify-content: center;
+----------
+Alignement à la fin de la ligne (droite)
+justify-content: flex-end;
+----------
+Espacement entre chaque element
+justify-content: space-between;
+----------
+Espacement autour des elements
+justify-content: space-around;
+----------------------------------------
+
+/ ALIGNEMENT PRINCIPAL/
+PAR DEFAUT
+align-items: stretch;
+----------------------------------------------
+
+/ MARGE ENTRE CHAQUE ELEMENT /
+gap: 3rem;
+---------------------------------------------- **/
+/** RESET VALEUR **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/** ------------------------------------------------ **/
+/** DECLARER VARIABLE FONT - IMPORTER FONT **/
+@font-face {
+    font-family:"NOM FONT";
+    src: url("");
+}
+/** ------------------------------------------------
+                    HEADER
+--------------------------------------------------**/
+.container {
+    /** RESET VALEUR **/
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #000000;
+    height: 6rem;
+}
+/** COLOR WHITE NAV **/
+.container li{
+    color: #ffffff;
+    margin-top: 2rem;
+    list-style: none;
+}
+/** ------------------------------------------------
+                    MAIN
+--------------------------------------------------**/
+/** CORPS DE LA PAGE BACKGROUND **/
+body {
+    background-color: #c7a06c;
+}
+/** TITRE PRINCIPAL **/
+h1 {
+    font-size: 3rem;
+    width: 31rem;
+}
+/** RESIZE IMG PIZZAS **/
+.img-pizzas img{
+    height: 350px;
+    width: 400px;
+}
+/** -------------------- **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ------------------------------------------------
+                    FOOTER
+----------------------------------------------------**/
+
+
+
+
+
+/** -------------------------------------------------**/
